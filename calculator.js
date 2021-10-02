@@ -87,7 +87,7 @@ document.addEventListener('keydown', function(event) {
     if (event.code == "Backspace") cleaner();
   });
 
-
+alert(`asd`)
 
 
 
