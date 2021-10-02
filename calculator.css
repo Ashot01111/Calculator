@@ -1,0 +1,110 @@
+#calculatorFrame {
+    margin: 50px auto 0;
+    width: 400px;
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(173, 177, 173);
+    /* background-image: url(Pics/40567-igolki_vetki_shar.jpg); */
+    background-image: url(Pics/46447-kapli_makro_listok_cian.jpg);
+    background-size: cover;
+    /* background-position-y: 200px; */
+    border-radius: 20px;
+    padding: 20px;
+    border: 3px solid black;
+}
+
+#head {
+    width: 100%;
+    background-color: #524e4e;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    border: 3px solid black;
+}
+
+#display {
+    margin: 30px auto;
+    width: 85%;
+    height: 100px;
+    background-color: honeydew;
+    border-radius: 3px;
+}
+
+@keyframes resultAnim {
+    /* 0%   {color:red; left:0px; top:0px;}
+    25%  {color:yellow; left:200px; top:0px;}
+    50%  {color:blue; left:200px; top:200px;}
+    75%  {color:green; left:0px; top:200px;}
+    100% {color:red; left:0px; top:0px;} */
+    /* from {
+        transform: rotate(0deg);
+        color: blue;
+        transform-origin: 95% 5%;
+    }
+    to {
+        transform: rotate(360deg);
+        color: green;
+        transform-origin: 95% 75%;
+    } */
+}
+
+#result {
+    margin: 0;
+    padding-top: 8%;
+    padding-right: 3%;
+    text-align: right;
+    font-size: 40px;
+    animation: resultAnim 6s infinite;
+    transform-origin: right 50%;
+}
+
+.body {
+    width: 250px;
+    display: flex;
+}
+
+#keyPad {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.but {
+    border-radius: 6px;
+    margin: 8px;
+    width: 21%;
+    height: 60px;
+    /* background-color: #DADCE0; */
+    background-color: #c8d2e7;
+    font-size: 26px;
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+}
+
+.butNum {
+    box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.5);
+    border-radius: 6px;
+    margin: 8px;
+    width: 21%;
+    height: 60px;
+    background-color: #F1F3F4;
+    /* background-color: #cfcac6; */
+    font-size: 22px;
+}
+
+#onOff {
+    font-size: 18px;
+    background-color: #F76C00;
+}
+
+.but:hover, .butNum:hover {
+    cursor: pointer;
+    background-color: #a9b8c0;
+    transform: scale(105%);
+    box-shadow: rgb(32, 32, 212);
+    transition: 0.3s;
+}
+
+.numbers {
+    background-color: #F1F3F4;
+}

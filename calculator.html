@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <div id="calculatorFrame">
+        <div id="head">
+            <div id="display">
+                <p id="result"></p>
+            </div>
+        </div>
+        <div id="keyPad">
+            <button onclick="power()" class="but" id="onOff">ON/OFF</button>
+            <button onclick="percent()" class="but">%</button>
+            <button onclick="root()" class="but">√</button>
+            <button onclick="mathCalculation(`divide`,`÷`)" class="but">÷</button>
+            <button onclick="numAction(7)" class="butNum" class="numbers">7</button>
+            <button onclick="numAction(8)" class="butNum" class="numbers">8</button>
+            <button onclick="numAction(9)" class="butNum" class="numbers">9</button>
+            <button onclick="mathCalculation(`multiply`,`x`)" class="but">×</button>
+            <button onclick="numAction(4)" class="butNum" class="numbers">4</button>
+            <button onclick="numAction(5)" class="butNum" class="numbers">5</button>
+            <button onclick="numAction(6)" class="butNum" class="numbers">6</button>
+            <button onclick="mathCalculation(`minus`,`-`)" class="but">-</button>
+            <button onclick="numAction(1)" class="butNum" class="numbers">1</button>
+            <button onclick="numAction(2)" class="butNum" class="numbers">2</button>
+            <button onclick="numAction(3)" class="butNum" class="numbers">3</button>
+            <button onclick="mathCalculation(`plus`,`+`)" class="but" class="numbers">+</button>
+            <button onclick="num0()" class="butNum" class="numbers">0</button>
+            <button onclick="symbolPoint()" class="butNum" class="numbers">.</button>
+            <button onclick="cleaner()" class="butNum" class="numbers">C</button>
+            <button onclick="mathResult()" class="but">=</button>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
+
+
+
+
+
+<!-- <div id="calculatorFrame">
+    <div id="head">
+        <div id="display">
+            <p id="result"></p>
+        </div>
+    </div>
+    <div id="keyPad">
+        <button onclick="power()" class="but" id="onOff">ON/OFF</button>
+        <button onclick="percent()" class="but">%</button>
+        <button onclick="root()" class="but">√</button>
+        <button onclick="divide()" class="but">÷</button>
+        <button onclick="num7()" class="butNum" class="numbers">7</button>
+        <button onclick="num8()" class="butNum" class="numbers">8</button>
+        <button onclick="num9()" class="butNum" class="numbers">9</button>
+        <button onclick="multiply()" class="but">×</button>
+        <button onclick="num4()" class="butNum" class="numbers">4</button>
+        <button onclick="num5()" class="butNum" class="numbers">5</button>
+        <button onclick="num6()" class="butNum" class="numbers">6</button>
+        <button onclick="minus()" class="but">-</button>
+        <button onclick="num1()" class="butNum" class="numbers">1</button>
+        <button onclick="num2()" class="butNum" class="numbers">2</button>
+        <button onclick="num3()" class="butNum" class="numbers">3</button>
+        <button onclick="plus()" class="but" class="numbers">+</button>
+        <button onclick="num0()" class="butNum" class="numbers">0</button>
+        <button onclick="symbolPoint()" class="butNum" class="numbers">.</button>
+        <button onclick="cleaner()" class="butNum" class="numbers">C</button>
+        <button onclick="mathResult()" class="but">=</button>
+    </div>
+</div> -->
